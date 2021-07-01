@@ -47,6 +47,7 @@ pub mod current {
 }
 
 /// Support for the CPUID instructions.
+#[cfg(target_arch = "x86_64")]
 pub mod cpuid {
     pub use raw_cpuid::*;
 }
